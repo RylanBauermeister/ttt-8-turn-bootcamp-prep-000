@@ -5,5 +5,5 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
 9.times do |index|
-  turn(board, gets, index % 2 == 0 ? 'O' : 'X')
+  turn(board, index % 2 == 0 ? 'O' : 'X')
 end
