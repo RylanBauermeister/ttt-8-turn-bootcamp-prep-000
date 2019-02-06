@@ -32,7 +32,7 @@ def turn(board, turn = 'X')
       puts "Please enter 1-9:"
       index = gets.to_i
   end
-  
+  puts index.to_s
   move(board, index, turn)
   display_board(board)
 end
