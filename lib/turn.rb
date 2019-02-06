@@ -21,9 +21,7 @@ def position_taken?(board, index)
 end
 
 def move(board, index, type = 'X')
-  if valid_move?(board, index)
-    board[index] = type
-  end
+   board[index] = type
 end
 
 def turn(board, turn = 'X')
