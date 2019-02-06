@@ -19,7 +19,7 @@ def position_taken?(board, index)
 end
 
 def move(board, index, type = 'X')
-  if valid_move?(index)
+  if valid_move?(board, index)
     board[index] = 'X'
   end
 end
