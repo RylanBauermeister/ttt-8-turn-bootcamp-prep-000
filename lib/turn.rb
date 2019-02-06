@@ -20,7 +20,7 @@ end
 
 def move(board, index, type = 'X')
   if valid_move?(board, index)
-    board[index] = 'X'
+    board[index] = type
   end
 end
 
