@@ -5,5 +5,5 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
 9.times do 
-  turn()
+  turn(board, gets, )
 end
