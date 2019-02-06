@@ -15,7 +15,8 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  board[index].to_s.strip != ""
+  if board[index]
+    board[index].to_s.strip != ""
 end
 
 def move(board, index, type = 'X')
