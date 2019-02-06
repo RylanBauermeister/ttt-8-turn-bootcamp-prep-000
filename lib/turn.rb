@@ -26,8 +26,8 @@ end
 
 def turn(board, turn = 'X')
   until valid_move?(board, index)
-  puts "Please enter 1-9:"
-  index = input_to_index(gets)
+    puts "Please enter 1-9:"
+    index = input_to_index(gets)
   move(board, index, turn)
 end
     
