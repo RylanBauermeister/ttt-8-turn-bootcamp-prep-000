@@ -11,13 +11,12 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
-  index >= 0 && index < 10 && !position_taken?(board, index)
+  index >= 0 && index < 9 && !position_taken?(board, index)
 end
 
 def position_taken?(board, index)
   if board[index]
     board[index].to_s.strip != ""
-  end
 end
 
 def move(board, index, type = 'X')
